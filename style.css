@@ -1,0 +1,73 @@
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Gaya untuk container utama */
+nav {
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px; /* Berikan jarak antara judul dan menu */
+    width: 400px;
+    display: inline-block;
+}
+
+/* Gaya judul halaman */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Gaya navigasi dan tautan */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #4CAF50;
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+    background-color: #f9f9f9;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Tampilan responsif */
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+    }
+}
